@@ -14,3 +14,13 @@ from . import read_ppmlr #This reads in the original PPMLR ASCII cubes
 from . import read_fits_cube #This reads in the new FITS format 
 from . import set_initial_params #This sets the initial parameters for CMEM
 from . import get_names_and_units #This gets the names and units of each CMEM parameter 
+
+
+#Environment Variables to paths where emissivity cubes are stored. 
+import os
+if "PPMLR_PATH" not in os.environ:
+    os.environ["PPMLR_PATH"] = "/data/smile/PPMLR/"
+if "OPENGGCM_PATH" not in os.environ:
+    os.environ["OPENGGCM_PATH"] = "/data/smile/OpenGGCM/"
+if "BATSRUS_PATH" not in os.environ:
+    os.environ["BATSRUS_PATH"] = "/data/smile/BATSRUS/"

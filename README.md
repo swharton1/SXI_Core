@@ -12,5 +12,9 @@ CMEM2/
 CMEM_Ops/
 Emissivity_Cubes/ 
 
-I recommend you put the top-level folder in your Pythonpath, say in your .bashrc file if you're linux. Mine looks like this: 
+THINGS YOU NEED TO DO: 
+
+1. I recommend you put the top-level folder in your Pythonpath, say in your .bashrc file if you're linux. Mine looks like this: 
 PYTHONPATH=$PYTHONPATH:~/Code/SXI_Core/
+
+2. Adapt paths to emissivity cubes. read_fits_cube uses paths stored as environment variables to find the emissivity cubes. You need to set these in the init file. Change whichever of these variables you need too: PPMLR_PATH, OPENGGCM_PATH or BATSRUS_PATH. 
