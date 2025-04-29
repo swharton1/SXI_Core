@@ -9,3 +9,6 @@ CMEM_Image/
 CMEM2/
 CMEM_Ops/
 Emissivity_Cubes/ 
+
+I recommend you put the top-level folder in your Pythonpath, say in your .bashrc file if you're linux. Mine looks like this: 
+PYTHONPATH=$PYTHONPATH:~/Code/SXI_Core/
