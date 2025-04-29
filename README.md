@@ -1,6 +1,8 @@
 # SXI_Core
 This contains core functions used by a range of CMEM and SXI projects. 
 
+It is not intended you would call this code directly. These are supporting functions for other CMEM projects. 
+
 I've made it because I got fed up of copying the same scripts, and having to fix bugs in lots of copies, or just having keep lots of versions of things the same. 
 
 You would need this module to run any of the following modules: 
