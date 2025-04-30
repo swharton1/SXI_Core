@@ -72,6 +72,14 @@ class read_fits_cube():
                 # Get magnetic pressure. 
                 self.mag_pressure = calc_pressures.calc_magnetic_pressure(self.bx, self.by, self.bz)
                 
+                #Get dipole values if present. 
+                if 'DIPOLE' in self.primary_header:
+                    self.dipole = self.primary_header['DIPOLE']
+                if 'TIME' in self.primary_header:
+                    self.time = self.primary_header['TIME']:
+                if 'DIPOLE_Y' in self.primary_header:
+                    self.dipole_y = self.primary_header['DIPOLE_Y']
+                
                 #Get the number of indices in the x, y and z directions. 
                 self.n = np.array([self.primary_header['NAXIS1'], self.primary_header['NAXIS2'], self.primary_header['NAXIS3']]).astype('int32')
 
