@@ -76,7 +76,7 @@ class read_fits_cube():
                 if 'DIPOLE' in self.primary_header:
                     self.dipole = self.primary_header['DIPOLE']
                 if 'TIME' in self.primary_header:
-                    self.time = self.primary_header['TIME']:
+                    self.time = self.primary_header['TIME']
                 if 'DIPOLE_Y' in self.primary_header:
                     self.dipole_y = self.primary_header['DIPOLE_Y']
                 

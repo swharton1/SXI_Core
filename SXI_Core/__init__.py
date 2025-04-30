@@ -18,6 +18,8 @@ from . import get_names_and_units #This gets the names and units of each CMEM pa
 
 from . import add_fov_boundaries
 
+from . import read_cmap #Imports the beloved Lundi colourmap. 
+
 #Environment Variables to paths where emissivity cubes are stored. 
 import os
 if "PPMLR_PATH" not in os.environ:
