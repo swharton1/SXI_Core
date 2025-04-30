@@ -16,6 +16,7 @@ from . import read_fits_cube #This reads in the new FITS format
 from . import set_initial_params #This sets the initial parameters for CMEM
 from . import get_names_and_units #This gets the names and units of each CMEM parameter 
 
+from . import add_fov_boundaries
 
 #Environment Variables to paths where emissivity cubes are stored. 
 import os

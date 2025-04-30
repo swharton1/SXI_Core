@@ -26,7 +26,7 @@ def make_earth(ax, rotation=0):
     polygon2 = Polygon(verts2, closed=True, edgecolor='navy', facecolor='navy', alpha=1) 
     ax.add_patch(polygon2)
     
-def make_earth_3d(ax):
+def make_earth_3d(ax, color='k'):
     '''This will add a sphere for the Earth in a 3D plot. '''
         
     #Create a spherical surface. 
@@ -37,7 +37,7 @@ def make_earth_3d(ax):
     y = radius* np.outer(np.sin(u), np.sin(v))
     z = radius* np.outer(np.ones(np.size(u)), np.cos(v))
 
-    ax.plot_surface(x, y, z, color='k', lw=0, alpha=1)
+    ax.plot_surface(x, y, z, color=color, lw=0, alpha=1)
     
 def make_earth_3d_2(ax):
     '''This will add a sphere for the Earth. It is black one side, white the other.'''
